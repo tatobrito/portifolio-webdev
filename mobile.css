@@ -1,0 +1,201 @@
+/* Estilos para Tablet (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Navbar */
+    .navbar-container {
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .navbar-container ul li {
+        margin-right: 20px;
+    }
+
+    /* Show Container */
+    .show-container h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .show-container p {
+        font-size: 1rem;
+    }
+
+    /* About Me */
+    .about-me-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-content img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    /* Projects */
+    .projects-content {
+        margin-top: 80px;
+    }
+
+    .project-itens {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .project-item-img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 15px;
+    }
+
+    .project-text {
+        margin-left: 0;
+        max-width: 500px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .footer-container .social-items i {
+        margin: 0 10px;
+    }
+}
+@media(max-width: 1024px){
+    .navbar-container{
+        display: none;
+    }
+
+    /*show-case*/
+    .show-container h1{ 
+        font-size: 3rem;
+        text-align: center;
+        line-height: 3.3rem;
+    }
+
+    .show-container p{
+        font-size: 0.875rem;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /*about me*/
+    .about-me-content {
+        flex-direction: column;
+    }
+
+    .about-me-content img{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .about-me-content p{
+        font-size: 0.975rem;
+        text-align: center;
+    }
+    /*habilities*/
+    .skills-content{
+        margin-top:40px;
+        flex-direction: column;
+    }
+
+    .skills-content .skills-itens:nth-child(2) {
+        margin-left: 0;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+
+    .skill-itens{
+       padding: 30px; 
+    }
+    
+    .skills-itens img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-itens p{
+        font-size: 0.875rem;
+    }
+
+    /*utilities*/
+    .section-title{
+        font-size: 2rem;
+    }
+
+    .section-container{
+        padding: 30px;
+    }
+
+    /*projects*/
+
+    .projects-content{
+        margin-top: 40px;
+    }
+
+    .project-itens{
+        flex-direction: column;
+    }
+    
+    .projects-content .project-itens:nth-child(2),
+    .projects-content .project-itens:nth-child(4) {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .projects-content .project-itens:nth-child(2) .project-item-img,
+    .projects-content .project-itens:nth-child(4) .project-item-img {
+        order: 1;
+        margin-left: 0px;
+    }
+
+    .projects-content .project-itens:nth-child(2) .project-text,
+    .projects-content .project-itens:nth-child(4) .project-text {
+        order: 2;
+    }
+
+    .project-text{
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .project-text h3{
+        font-size: 1.5rem;
+    }
+
+    .project-text p{
+        font-size: 0.875rem;
+        margin-top:10px;
+    }
+
+    /*contact*/
+    .contact-forms{
+        margin-top: 40px;
+    }
+
+    /*footer*/
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-items{
+        margin-bottom: 15px;
+    }
+
+    .social-items a:last-child{
+        margin-right: 0;
+    }
+}
