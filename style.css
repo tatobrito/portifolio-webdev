@@ -48,12 +48,15 @@ a{
     align-items: center;
     justify-content: center;
     color: white;
-    background-image: url("./images/showcase.png");
+    background-image: url("./images/img_executivo.jpg");
     background-size: cover;
     background-position: center;
     /*overlay */
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: color;
+    background-size: cover;
+    width: 100vw;
+    background-position: center 30%;
 }
 
 .show-container h1{
@@ -80,16 +83,28 @@ a{
     margin-top: 50px;
 }
 
-.about-me-content img{
-    width: 320px;
-    height: 320px;
-    margin-right: 50px;
-}
 
 .about-me-content p{
     color:white;
-    list-style: 2rem;
+    list-style: 20rem;
+    font-size: 19px
 }
+
+.about-me-content img {
+    width: 320px;
+    height: 320px;
+    margin-right: 50px;
+    border-radius: 100px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.about-me-content img:hover {
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.7); /* Glow branco */
+    transform: scale(1.05); /* Aumenta levemente a imagem */
+}
+
+
 
 /* Projects */
 
@@ -139,7 +154,7 @@ a{
     text-align: right;
 }
 
-.projects-content .project-itens:nth-child(2) .project-item-img, 
+.projects-content .project-itens:nth-child(2) .project-item-img,
 .projects-content .project-itens:nth-child(4) .project-item-img{
     order: 2;
     margin-left: 50px;
@@ -190,8 +205,8 @@ a{
 .section-container{
     width: 100%;
     background-color: #111;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .section-content{
@@ -208,6 +223,7 @@ a{
     text-transform: uppercase;
     padding-bottom: 8px;
     padding-left: 8px;
+    padding-top: 60px;
     padding-right: 8px;
     border-bottom: 1.5px solid white;
     text-align: center;
@@ -224,7 +240,7 @@ a{
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
-    
+
 }
 
 .contact-forms input{
@@ -273,13 +289,13 @@ a{
 
 .skills-itens{
     background-color: #202020;
-    padding: 50px;
     border-radius: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
 }
 /*pseudo classes*/
 .skills-content .skills-itens:nth-child(2){
@@ -297,4 +313,9 @@ a{
 .skills-itens p{
     color: white;
     opacity: 75%;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: 0 auto;
+
 }
